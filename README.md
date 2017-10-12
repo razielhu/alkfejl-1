@@ -19,12 +19,12 @@ University project
  * (Team-User összekötő tábla: id, user, team, jogosultsag)
  
 ## Funkcionális követelmények
-*###User functions
+* ###User functions
 	* Regisztrálás
 	* Bejelentkezés / Kijelentkezés
 	* Adatmódosítás
  
-*###Task functions
+* ###Task functions
 	* Új Taszk Létrehozás
 	* Taszk Törlés
 	* Taszkok Listázása
@@ -33,12 +33,12 @@ University project
 	* Elhalasztás
 	* Szüneteltetés
 	* Task Mozgatás
-*###Group functions
+* ###Group functions
 	* Group Létrehozás
 	* Group Módosítás
 	* Group Törlés
 	* Group Listázás
-*###Team functions
+* ###Team functions
 	* Team Létrehozás
 	* Team Módosítás
 	* Team Törlés
