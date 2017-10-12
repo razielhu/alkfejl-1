@@ -9,7 +9,7 @@ University project
  Lehetőséget biztosít feladatok csoportosítására és...
 
 ### Pomodoro technika 
- ![alt text](https://cdn-images-1.medium.com/max/1600/1*R_S2oOzg5nI3e5VFHW1CKA.png)
+ ![Pomodoro technique picture](https://cdn-images-1.medium.com/max/1600/1*R_S2oOzg5nI3e5VFHW1CKA.png)
  
 ## Adatbázis modell
  * **User tábla**: id, nev, jelszo, email
@@ -48,3 +48,4 @@ University project
 	* *(Jogosultságok kiosztása)*
  
 ## Adatbázis diagram
+![uml_diagram](https://raw.githubusercontent.com/Tamakasi/alkfejl/master/uml_alkfejl.jpg)
