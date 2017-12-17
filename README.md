@@ -49,3 +49,5 @@ University project
  
 ## Adatbázis diagram
 ![uml_diagram](https://raw.githubusercontent.com/Tamakasi/alkfejl/master/uml_alkfejl.jpg)
+
+> **Note:** Group megnevezés Folder-re lett cserélve, mert így kényelmesebb és SQL-be se használjuk kulcsszóként az entity nevét így.
