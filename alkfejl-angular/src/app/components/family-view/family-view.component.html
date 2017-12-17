@@ -1,0 +1,10 @@
+<mat-card class="familyview">
+  <mat-card-content>
+    <h3>Családtagok</h3>
+    <mat-list>
+        <mat-list-item *ngFor="let member of _family" routerLink="/family/{{member.id}}">
+          {{member.name}}
+        </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

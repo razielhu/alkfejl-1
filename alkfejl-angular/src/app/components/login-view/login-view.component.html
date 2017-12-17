@@ -1,0 +1,40 @@
+<mat-card>
+  <mat-card-content>
+    <h3>Bejelentkezés</h3>
+    <mat-form-field>
+      <input matInput type="" placeholder="Név" #nameInput>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <input matInput type="password" placeholder="Jelszó" #passwordInput>
+    </mat-form-field>
+    <br>
+    <div [hidden]="!regClicked">
+      <mat-form-field >
+        <input matInput type="email" placeholder="E-mail cím" #emailInput>
+      </mat-form-field>
+    </div>
+    <br>
+    <button *ngIf="regClicked" mat-raised-button color="primary" 
+        (click)="regClicked = false">
+      Vissza
+    </button>
+    <button *ngIf="!regClicked" mat-raised-button color="primary" 
+            (click)="tryLogin(nameInput.value, passwordInput.value)">
+      Bejelentkezés
+    </button>
+    <br>
+    <div *ngIf="loginError">{{error}}</div>
+    <br>
+    <button *ngIf="!regClicked" mat-raised-button color="primary" 
+        (click)="regClicked = true">
+      Regisztráció
+    </button>
+    <button mat-raised-button color="primary"         
+        *ngIf="regClicked"
+        (click)="tryRegister(nameInput.value, passwordInput.value, emailInput.value)">
+      Regisztráció2
+    </button>
+    <div *ngIf="regError">{{error}}</div>
+  </mat-card-content>
+</mat-card>
