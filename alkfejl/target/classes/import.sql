@@ -1,0 +1,7 @@
+INSERT INTO USER (ID, VERSION, NAME, PASSWORD, EMAIL, ROLE) VALUES (7, 0, 'admin', 'admin', 'adminmail', 'ADMIN');
+
+INSERT INTO USER (ID, VERSION, NAME, PASSWORD, EMAIL, ROLE) VALUES (8, 0, 'test1', 'test1', 'test1','USER');
+
+INSERT INTO USER (ID, VERSION, NAME, PASSWORD, EMAIL, ROLE) VALUES (9, 0, 'test2', 'test2', 'test2', 'USER');
+
+

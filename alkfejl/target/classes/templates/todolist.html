@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8" />
+    </head>
+    <body>
+        <h1>TodoList</h1>
+        <form method="post" 
+              th:action="@{/todo/add}"
+              th:object="${newTodo}">
+            <input type="text" 
+                   th:field="${newTodo.text}" />
+            <input type="submit" />
+        </form>
+        <ul>
+            <li th:each="todo : ${todos}">
+                <span th:text="${todo.id}"></span>
+                :
+                <span th:text="${todo.text}"></span>
+                <ul>
+                    <li th:each="comment : ${todo.comments}">
+                        <span th:text="${comment.text}"></span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

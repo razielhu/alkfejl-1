@@ -1,0 +1,6 @@
+hu\elte\alkfejl\controller\HelloController.class
+hu\elte\alkfejl\entity\BaseEntity.class
+hu\elte\alkfejl\repository\TodoRepository.class
+hu\elte\alkfejl\entity\Todo.class
+hu\elte\alkfejl\entity\Comment.class
+hu\elte\alkfejl\AlkfejlApplication.class
