@@ -1,53 +1,27 @@
-# alkfejl 
-University project
+# AlkfejlAngular
 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.8.
 
-## Rövid leírás
- A web alkalmazás egy személyes feladat menedzselés
- megkönnyítésére szánt eszköz lenne. A Pomodoro technikára
- épülve segítené a felhasználót feladatainak szervezésében.
- Lehetőséget biztosít feladatok csoportosítására és...
+## Development server
 
-### Pomodoro technika 
- ![Pomodoro technique picture](https://cdn-images-1.medium.com/max/1600/1*R_S2oOzg5nI3e5VFHW1CKA.png)
- 
-## Adatbázis modell
- * **User tábla**: id, nev, jelszo, email
- * **Task tábla**: id, user, csapat,  határidő , állapot, leírás, prioritás
- * **Group tábla**: id, user, team, nev, leiras, szin 
- * **Team tábla**: id, nev, leiras
- * *(Team-User összekötő tábla: id, user, team, jogosultsag)*
- 
-## Funkcionális követelmények
-* ### User functions
-	* Regisztrálás
-	* Bejelentkezés / Kijelentkezés
-	* Adatmódosítás
- 
-* ### Task functions
-	* Új Taszk Létrehozás
-	* Taszk Törlés
-	* Taszkok Listázása
-	* Taszk Módosítás
-	* Teljesített-re állítás
-	* Elhalasztás
-	* Szüneteltetés
-	* Task Mozgatás
-* ### Group functions
-	* Group Létrehozás
-	* Group Módosítás
-	* Group Törlés
-	* Group Listázás
-* ### Team functions
-	* Team Létrehozás
-	* Team Módosítás
-	* Team Törlés
-	* Team Listázás
-	* User meghívása Team-be
-	* Csatlakozás Team-be
-	* *(Jogosultságok kiosztása)*
- 
-## Adatbázis diagram
-![uml_diagram](https://raw.githubusercontent.com/Tamakasi/alkfejl/master/uml_alkfejl.jpg)
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-> **Note:** Group megnevezés Folder-re lett cserélve, mert így kényelmesebb és SQL-be se használjuk kulcsszóként az entity nevét így.
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

@@ -12,6 +12,10 @@ import { FamilyViewComponent } from './components/family-view/family-view.compon
 import { ShopViewComponent } from './components/shop-view/shop-view.component';
 import { FamilyMemberViewComponent } from './components/family-member-view/family-member-view.component';
 import { LoginViewComponent } from './components/login-view/login-view.component';
+import { FolderViewComponent } from './components/folder-view/folder-view.component';
+import { TasklistComponent } from './components/tasklist/tasklist.component';
+import { TaskComponent } from './components/task/task.component';
+import { NewtaskComponent } from './components/newtask/newtask.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { LoginViewComponent } from './components/login-view/login-view.component
     FamilyViewComponent,
     ShopViewComponent,
     FamilyMemberViewComponent,
-    LoginViewComponent
+    LoginViewComponent,
+    FolderViewComponent,
+    TasklistComponent,
+    TaskComponent,
+    NewtaskComponent,
   ],
   imports: [
     BrowserModule, 

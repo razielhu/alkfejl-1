@@ -1,0 +1,8 @@
+<mat-card class="tasklist">
+  <mat-card-content>
+    <h3>task list</h3>
+    <mat-list>
+        <app-task *ngFor="let item of tasks" [task]="task"></app-task>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
