@@ -13,7 +13,6 @@ import hu.elte.alkfejl.repository.FolderRepository;
 import hu.elte.alkfejl.repository.TeamRepository;
 import hu.elte.alkfejl.repository.UserRepository;
 import hu.elte.alkfejl.service.UserService;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -174,7 +173,7 @@ public class FolderController {
         return found;
     }
     
-    @PostMapping(value="/list")
+    @RequestMapping(value="/list")
     @ResponseBody
     @Role({User.Role.USER, User.Role.ADMIN})
     public ResponseEntity list() {

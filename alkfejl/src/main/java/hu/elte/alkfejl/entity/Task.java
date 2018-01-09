@@ -23,6 +23,14 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 public class Task extends BaseEntity {
    
+    
+    public Task(Folder folder, Task t) {
+        this.folder = folder;
+        this.state = "created";
+        this.description = t.getDescription();
+        this.priority = t.getPriority();
+    }
+    
     public Task(Folder folder, String description) {
         this.folder = folder;
         this.state = "created";

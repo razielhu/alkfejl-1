@@ -1,5 +1,6 @@
 package hu.elte.alkfejl.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import hu.elte.alkfejl.annotation.Role;
 import java.util.ArrayList;
 import java.util.List;
@@ -39,10 +40,12 @@ public class User extends BaseEntity {
     @Column(unique=true, nullable = false)
     private String email;
     
+    @JsonIgnore
     @OneToMany(targetEntity = Folder.class, 
                cascade = CascadeType.ALL)
     private List<Folder> folders = new ArrayList<Folder>();
     
+    @JsonIgnore
     @ManyToMany(targetEntity = Team.class,
                 cascade = CascadeType.ALL)
     private List<Team> teams = new ArrayList<Team>(); 

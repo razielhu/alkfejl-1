@@ -5,6 +5,7 @@
  */
 package hu.elte.alkfejl.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.CascadeType;
@@ -38,6 +39,10 @@ public class Folder extends BaseEntity {
         this.color=color;
     }
     
+    public void addTask(Task t) {
+        this.tasks.add(t);
+    }
+    
         
     @Column(nullable = false)
     private String name;
@@ -48,6 +53,7 @@ public class Folder extends BaseEntity {
     @Column(nullable = false)
     private String color = "green";
     
+    @JsonIgnore
     @OneToMany(targetEntity = Task.class, 
                cascade = CascadeType.ALL)
     private List<Task> tasks = new ArrayList<Task>();
